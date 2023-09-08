@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head charset="UTF-8">
+        <title>Noah Stieler</title>
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+        <link rel="stylesheet" type="text/css" href="./styles.css"></link>
+    </head>
+
+    <body>
+        <div style="background-image: url(./images/mushroom.jpg);" 
+            id="header" class="font-drawn">
+            
+            <div id="header-text">
+                <p id="title">noah stieler.</p>
+                <p id="subtitle">
+                    <span id="sub1">creative.</span>
+                    <span id="sub2">passionate.</span>
+                    <span id="sub3">engineer.</span>
+                </p>
+            </div>
+            
+            <div style="position: relative">
+                <img id="doodle" src="./images/doodle0.svg">
+                <div style="background-image: url(./images/me.jpg);" 
+                    class="circle-crop" id="portrait"></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="page-link-container" class="font-drawn">
+                <div class="page-link">resume</div>
+                <div class="page-link">projects</div>
+                <div class="page-link">game dev</div>
+            </div>
+
+            <div id="social-link-container">
+                <a href="https://www.youtube.com/@noahstieler6264"><img src="./images/icons/youtube.png" class="social-link"></a>
+                <a href="https://github.com/kelpdotkelp"><img src="./images/icons/github.png" class="social-link"></a>
+                <a href="https://www.instagram.com/noahstieler/"><img src="./images/icons/instagram.png" class="social-link"></a>
+                <a href="https://www.linkedin.com/in/noah-stieler-1b9964207/"><img src="./images/icons/linkedin.png" class="social-link"></a>
+            </div>
+
+            <div id="projects" class="content">
+                <p class="content-header font-drawn">projects</p>
+                
+                <div class="content-container">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">automated data collection system</a>
+                        </p>
+                        <p class="container-date font-drawn">2023</p>
+                        <p class="container-desc font-drawn">
+                            Automated data collection system for electromagnetic imaging. I wrote Python software 
+                            to control a vector network analyzer and positioning robot. I designed the software in such a way
+                            that it can easily control multiple experiments that use different hardware. I deisigned and built a custom 
+                            robot that positions imaging targets in 3D space. This robot interfaces with my software via GRBL.
+                            The collected data is then stored using MongoDB.
+                            Software repo: <a href="https://github.com/kelpdotkelp/Algae">https://github.com/kelpdotkelp/Algae</a></p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/projects/algae1.jpg);
+                            background-size: 450px;
+                            background-position-y: -150px; background-position-x: -50px;" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/projects/algae0.jpg);" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container direction-reverse">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">discrete transistor 4-bit full adder</a>
+                        </p>
+                        <p class="container-date font-drawn">2023</p>
+                        <p class="container-desc font-drawn">
+                            4 bit full adder I built from 77 discrete bipolar junction transistors.
+                            Only NAND gates were used in its construction, and the entire circuit was hand
+                            soldered on prototype board. More information can be found here:
+                            <a href="https://www.youtube.com/watch?v=9S3p2nGLjKE">https://www.youtube.com/watch?v=9S3p2nGLjKE</a>
+                        </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/projects/adder0.png);" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/projects/adder1.png);" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">2d java game engine</a>
+                        </p>
+                        <p class="container-date font-drawn">2021</p>
+                        <p class="container-desc font-drawn">
+                            A custom 2D game engine I wrote in Java. The engine supports collision,
+                            animation, scenes, and has a tile-based level editor. This was one of my
+                            favorite projects as I learned so much while building it, and I gained
+                            more understanding behind the design of professional game engines. I used
+                            this engine to create my game, Sporestride. 
+                        </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/projects/gameEngine1.jpg);
+                        background-position-x: -50px;" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/projects/gameEngine0.jpg);
+                        background-position-x: -25px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container direction-reverse">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">8-bit breadboard computer</a>
+                        </p>
+                        <p class="container-date font-drawn">2019</p>
+                        <p class="container-desc font-drawn">
+                            A simple 8-bit computer built entirely on breadboards, using only logic gates.
+                            The computer has memory, 2 registers, a 7 segment display for output, and an
+                            arithmetic logic unit that performs addition and subtraction. This design
+                            was based on Ben Eater's series on YouTube.
+                        </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/projects/computer0.png);
+                        background-position-y: -125px" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/projects/computer1.jpg);
+                        background-position-x: -25px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">high altitude balloon</a>
+                        </p>
+                        <p class="container-date font-drawn">2019</p>
+                        <p class="container-desc font-drawn">
+                            I was the leader of the electronics team for a high altitude balloon project. 
+                            We were responsible for the electronics aboard the payload. This included
+                            using a microcontroller to log data from sensors including a geiger counter
+                            and CO2 sensor, and control an LED display. 
+                            Here is a documentary on the project made by my good friend Jacob Markham: 
+                            <a href="https://www.youtube.com/watch?v=qOqCGjDKhQc">https://www.youtube.com/watch?v=qOqCGjDKhQc</a>
+                        </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/projects/hab0.jpg);" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/projects/hab1.jpg);" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="resume" class="content">
+
+                <p class="content-header font-drawn">resume</p>
+
+                <div class="resume-header">
+                    education
+                </div>
+                <div class="resume-item">
+                    <p class="resume-title">bachelor of science in electrical engineering</p>
+                    <p class="resume-date">Expecteded graduation date: spring 2025</p>
+                    <p class="resume-item-desc">University of Manitoba
+                        <br><br>Minor in computer science
+                        <br>Co-op/IIP option
+                    </p>
+                </div>
+                <div class="resume-item">
+                    <p class="resume-title">international baccalaureate diploma</p>
+                    <p class="resume-date">2020</p>
+                    <p class="resume-item-desc">
+                        Miles Macdonell Collegiate
+                    </p>
+                </div>
+
+                <div class="resume-header">work experience</div>
+                <div class="resume-item">
+                    <p class="resume-title">undergraduate researcher</p>
+                    <p class="resume-date">May 2023 - Present</p>
+                    <p class="resume-item-desc">University of Manitoba, Electromagnetic Imaging Lab
+                        <br><br>My primary duty has been to automate data collection for the lab's electromagnetic imaging experiements.
+                        I wrote Python software that has a full GUI and controls
+                        scientific instruments. Additionally, I designed and built a 3D positioning robot for automating the positioning of
+                        imaging targets. This role has required me to work closely with professors and graduate students to ensure their
+                        design requirements were being met.
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-title">content and study skills tutor</p>
+                    <p class="resume-date">August 2021 - May 2023</p>
+                    <p class="resume-item-desc">University of Manitoba, Academic Learning Centre
+                        <br><br>Responsible for tutoring students in university STEM courses and assistng them
+                        in developing better study skills. I gained exceptional communication skills and the ability to 
+                        express complex ides in a concise manner.
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-title">undergraduate researcher</p>
+                    <p class="resume-date">May - September 2022</p>
+                    <p class="resume-item-desc">University of Manitoba, IDEAS Lab
+                        <br><br>Designed and tested a memory efficient version of the rapidly exploring random 
+                        tree star (RRT*) algorithm, which is used to solve a variety of path planning problems.
+                        This work is summarized in the following research paper: <a href="https://drive.google.com/file/d/1osbg-6CodQoC_imBeWgTspgYyOxWyzYg/view?usp=share_link">
+                            https://drive.google.com/file/d/1osbg-6CodQoC_imBeWgTspgYyOxWyzYg/view?usp=share_link
+                        </a>
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-title">student research assistant</p>
+                    <p class="resume-date">October 2020 - August 2021</p>
+                    <p class="resume-item-desc">University of Manitoba, Dpt. of Anthropology
+                        <br><br>Responsible for adding bibliographic entries to an EndNote database and
+                        cataloguing faunal remains. Gained bibliographic skills and increased attention to detail.
+                    </p>
+                </div>
+
+                <div class="resume-header">team activities</div>
+                <div class="resume-item">
+                    <p class="resume-title">umsats - communications co-lead</p>
+                    <p class="resume-date">October 2021 - Present</p>
+                    <p class="resume-item-desc">University of Manitoba
+                        <br><br>UMSATS is a student design team at the University of Manitoba. The team's purpose
+                        is to design, build and launch satellites. The communcations subsystem handles
+                        the electronics that transmit and receive signals from the ground station. I've gained valuable leadership and design
+                        experience from this role.
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-title">ecomotion - team member</p>
+                    <p class="resume-date">October 2021 - Present</p>
+                    <p class="resume-item-desc">University of Manitoba
+                        <br><br>ecoMotion is a student design team at the University of Manitoba. The team's purpose
+                        is to design and build an electric car. This role has taught me about control systems
+                        and electric motors.
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-title">high altitude balloon club - electronics lead</p>
+                    <p class="resume-date">2018 - 2020</p>
+                    <p class="resume-item-desc">Miles Macdonell Collegiate
+                        <br><br>I was the electronics team lead for the high altitude ballon club at 
+                        Miles Macdonell Collegiate. Our team was responsible for logging from sensors like
+                        a geiger counter and CO2 sensor.  
+                    </p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-item-desc">
+                        <br><br><br><br>Last updated: September 4, 2023
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="game-dev" class="content">
+                <p class="content-header font-drawn">game dev</p>
+
+                <div class="content-container">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">pathogenia</a>
+                        </p>
+                        <p class="container-date font-drawn">2023</p>
+                        <p class="container-desc font-drawn">
+                            Developed for Android and iOS using the Unity game engine. I integrated
+                            the Google AdMob API into the project.
+                            </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/gameDev/pathogenia1.jpg);
+                            background-size: 1000px;
+                            background-position-x: -50px;" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/gameDev/pathogenia0.jpg);
+                            background-size: 500px;
+                            background-position-x: -100px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container direction-reverse">
+                    <div class="container-text">
+                        <p class="container-name font-drawn">
+                            <a href="">crab commerce</a>
+                        </p>
+                        <p class="container-date font-drawn">2022</p>
+                        <p class="container-desc font-drawn">
+                            Developed for Android and iOS using the Unity game engine. I integrated
+                            the Unity Ads API into the project.
+                            </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/gameDev/crabCommerce1.png);
+                            background-size: 400px;
+                            background-position-y: -200px; background-position-x: -25px;" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/gameDev/crabCommerce0.png);
+                            background-size: 350px;
+                            background-position-x: -50px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="container-text">
+                        <p class="container-name font-drawn game-link">
+                            <a href="https://noahstieler.itch.io/sporestride">sporestride</a>
+                        </p>
+                        <p class="container-date font-drawn">2021</p>
+                        <p class="container-desc font-drawn">
+                            Desktop game I wrote in Java using my custom 2D game engine.
+                            Sporestride can be downloaded at:
+                            <a href="https://noahstieler.itch.io/sporestride">https://noahstieler.itch.io/sporestride</a>
+                            </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/gameDev/sporestride1.png);" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/gameDev/sporestride0.png);
+                            background-position-x: -25px; background-position-y: 0px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+
+                <div class="content-container direction-reverse">
+                    <div class="container-text">
+                        <p class="container-name font-drawn game-link">
+                            <a href="https://noahstieler.itch.io/mechanized-mutiny">mechanized mutiny</a>
+                        </p>
+                        <p class="container-date font-drawn">2020</p>
+                        <p class="container-desc font-drawn">
+                            Desktop game using the Unity game engine. This was the first game
+                            I completed with Unity.
+                            </p>
+                    </div>
+
+                    <div class="container-pictures">
+                        <div style="background-image: url(./images/gameDev/mechanizedMutiny0.png);
+                            background-position-x: -200px;" 
+                            class="circle-crop pic-1"></div>
+                        <div style="background-image: url(./images/gameDev/mechanizedMutiny1.png);
+                            background-position-x: -75px;" 
+                            class="circle-crop pic-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="photography" class="content">
+                <p class="content-header font-drawn">photography</p>
+            </div>
+        </div>
+
+        <script src="./js/subtitle.js"></script>
+        <script src="./js/link.js"></script>
+        <script src="./js/scroll.js"></script>
+        <script src="./js/content.js"></script>
+        <script src="./js/doodle.js"></script>
+    </body>
+</html>
