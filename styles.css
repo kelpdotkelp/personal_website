@@ -7,6 +7,14 @@
     local("helvetica")
 }
 
+@font-face {
+    font-family: "rubik";
+    src:
+    url("./fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf") format("truetype"),
+    url("./fonts/Rubik/Rubik-VariableFont_wght.ttf"), format("truetype"),
+    local("helvetica")
+}
+
 p {
     margin: 0px;
 }
@@ -157,12 +165,12 @@ a:active {
 
 .container-date {
     font-size: 1.5rem;
-    font-family: "Garamond", sans-serif !important;
+    font-family: "rubik", sans-serif !important;
 }
 
 .container-desc {
     font-size: 1.5rem;
-    font-family: "Garamond", sans-serif !important;
+    font-family: "rubik", sans-serif !important;
 }
 
 .container-pictures {
@@ -190,12 +198,12 @@ a:active {
 }
 
 .resume-date {
-    font-family: "Garamond", sans-serif !important;
+    font-family: "rubik", sans-serif !important;
     font-size: 1rem;
 }
 
 .resume-item-desc {
-    font-family: "Garamond", sans-serif !important;
+    font-family: "rubik", sans-serif !important;
     font-size: 1rem;
 }
 
