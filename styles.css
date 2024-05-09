@@ -239,6 +239,10 @@ a:active {
     font-family: "Drawn";
 }
 
+.font-rubik {
+    font-family: "rubik";
+}
+
 .direction-reverse {
     flex-direction: row-reverse;
 }

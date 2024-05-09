@@ -165,7 +165,6 @@ class Link {
 
 linksPage = document.getElementsByClassName("page-link");
 linksSocial = document.getElementsByClassName("social-link");
-linksGame = document.getElementsByClassName("game-link");
 list = [];
 
 for (i=0; i<linksPage.length; i++) {
@@ -173,7 +172,4 @@ for (i=0; i<linksPage.length; i++) {
 }
 for (i=0; i<linksSocial.length; i++) {
     list.push(new Link(linksSocial[i], false));
-}
-for (i=0; i<linksGame.length; i++) {
-    list.push(new Link(linksGame[i], false));
 }
