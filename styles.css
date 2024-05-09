@@ -89,7 +89,8 @@ a:active {
 }
 
 #main {
-    background-color: #faf8eb;
+    /*Previous color used: #faf8eb;*/
+    background-color: #fffcf2;
     padding-bottom: 200px;
     min-height: 1000px;
 }
@@ -133,6 +134,7 @@ a:active {
 .content-header {
     font-size: 5rem;
     align-self: flex-start;
+    justify-content: flex-start;
     padding-bottom: 2rem;
     padding: 50px;
 }
@@ -143,9 +145,9 @@ a:active {
     flex-wrap: wrap;
     align-items: center;
     row-gap: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
 }
 
 .container-text {

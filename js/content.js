@@ -91,24 +91,40 @@ class PicAnim {
         let pic2Width = parseFloat(window.getComputedStyle(pic2).width)
         let elementWidth = parseFloat(window.getComputedStyle(this.element).width);
 
+        //Circle
         this.bgElements[0].style.top = "0px";
         this.bgElements[0].style.borderRadius = "50%";
         this.bgElements[0].style.width = pic1Width + "px";
         this.bgElements[0].style.height = pic1Width + "px";
 
-        this.bgElements[1].style.width = (window.innerWidth - pic1Rect.right + pic1Width*0.5) + "px";
-        this.bgElements[1].style.left = (pic1Width*0.5) + "px";
+        //Rectangle
+        if (this.flipBackground) { //Draw from left side
+            this.bgElements[1].style.width = (pic1Rect.left + pic1Width*0.5) + "px";
+            this.bgElements[1].style.left = "-" + pic1Rect.left + "px";
+        } else { //Draw from right side
+            this.bgElements[1].style.width = (window.innerWidth - pic1Rect.right + pic1Width*0.5) + "px";
+            this.bgElements[1].style.left = (pic1Width*0.5) + "px";
+        }
+
         this.bgElements[1].style.top = "0px";
         this.bgElements[1].style.height = window.getComputedStyle(pic1).height;
 
+        //Circle
         this.bgElements[2].style.right = "0px";
         this.bgElements[2].style.bottom = "0px";
         this.bgElements[2].style.borderRadius = "50%";
         this.bgElements[2].style.width = pic2Width + "px";
         this.bgElements[2].style.height = pic2Width + "px";
 
-        this.bgElements[3].style.width = (window.innerWidth - pic2Rect.right + pic2Width*0.5) + "px";
-        this.bgElements[3].style.left = (elementWidth - pic2Width*0.5) + "px";
+        //Rectangle
+        if (this.flipBackground) { //Draw from left side
+            this.bgElements[3].style.width = (elementWidth + pic1Rect.left - pic2Width*0.5) + "px";
+            this.bgElements[3].style.left = "-" + pic1Rect.left + "px";
+        } else { //Draw from right side
+            this.bgElements[3].style.width = (window.innerWidth - pic2Rect.right + pic2Width*0.5) + "px";
+            this.bgElements[3].style.left = (elementWidth - pic2Width*0.5) + "px";
+        }
+
         this.bgElements[3].style.bottom = "0px";
         this.bgElements[3].style.height = window.getComputedStyle(pic2).height;
     }
